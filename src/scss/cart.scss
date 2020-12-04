@@ -1,0 +1,40 @@
+@import './var.scss';
+
+
+.cart-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width:90%;
+    height: 100vh;
+    padding-top: 15rem;
+    margin: 0 auto 0 auto;
+
+}
+.cart_grid{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+
+    &_item{
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+
+        &-img{
+            position: relative;
+            width: 20rem;
+            height: 20rem;
+            margin: 0 auto 0 auto;
+            border:1px solid yellow;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        &-img img{
+            object-fit: cover;
+        }
+        &-detail{
+            border:1px solid yellow;
+        }
+    }
+}

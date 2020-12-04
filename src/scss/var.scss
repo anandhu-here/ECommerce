@@ -1,0 +1,32 @@
+//color
+
+$color-white:#fff;
+$color-black:#000;
+
+$color-transparent:#ffffff00;
+
+
+//media break point
+
+$screen-sm-max: 596px;
+$screen-md-max:768px;
+$screen-lg-max:992;
+
+
+@mixin sm {
+    @media (max-width:#{$screen-sm-max}) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media (max-width:#{$screen-md-max}) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media (max-width:#{$screen-lg-max}) {
+        @content;
+    }
+}

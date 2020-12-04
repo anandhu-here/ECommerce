@@ -1,0 +1,101 @@
+.product {
+  padding-top: 13rem;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto 5rem auto; }
+  .product_header {
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 1fr;
+    height: 45rem;
+    width: 100%; }
+    @media (max-width: 596px) {
+      .product_header {
+        grid-template-columns: 1fr; } }
+  .product_item {
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    width: 35rem;
+    height: 35rem;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto 0.5rem auto;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); }
+    .product_item:hover {
+      box-shadow: 0 1.5rem 1.5rem rgba(0, 0, 0, 0.3); }
+  .product_details {
+    box-shadow: 0 0.5rem 0.2rem rgba(0, 0, 0, 0.3); }
+  .product_slide_back {
+    position: absolute;
+    transform: translateX(-18rem);
+    font-size: 2.5rem;
+    color: white; }
+    .product_slide_back::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      height: 7rem;
+      width: 7rem;
+      transform: translate(-2rem, -2.2rem);
+      background-color: #545557;
+      border-radius: 10rem; }
+    .product_slide_back:hover::before {
+      background-color: #232222; }
+  .product_slide_continue {
+    position: absolute;
+    transform: translateX(18rem);
+    font-size: 2.5rem;
+    color: white; }
+    .product_slide_continue::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      height: 7rem;
+      width: 7rem;
+      transform: translate(-4.5rem, -2.2rem);
+      background-color: #545557;
+      border-radius: 10rem; }
+    .product_slide_continue:hover::after {
+      background-color: #232222; }
+  .product_discription {
+    margin-top: 3rem;
+    margin-left: 3rem;
+    display: flex;
+    flex-direction: column; }
+    .product_discription_header {
+      height: 5rem;
+      font-size: 2.4rem;
+      font-weight: 600; }
+    .product_discription_prices {
+      height: 10rem;
+      font-size: 2rem;
+      font-weight: 500; }
+    .product_discription_buynow {
+      height: 5rem;
+      font-size: 2rem; }
+      .product_discription_buynow-btn {
+        height: 3rem;
+        width: 10rem;
+        border: none;
+        outline: none;
+        font-size: 1.4rem;
+        font-weight: 500;
+        border-radius: 10rem;
+        background-color: #e7c30e;
+        cursor: pointer; }
+        .product_discription_buynow-btn:hover {
+          transition: 0.1s;
+          width: 13rem;
+          height: 3.5rem;
+          font-size: 2rem; }
+    .product_discription_cart {
+      width: 50rem;
+      display: flex; }
+
+.product_right_cart {
+  margin-left: 1rem;
+  font-size: 3rem; }
